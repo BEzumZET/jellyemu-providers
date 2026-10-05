@@ -39,47 +39,37 @@
       "ColecoVision": "ColecoVision"
     }
   },
-  {
+    {
     "name": "CoolROM",
-    "domain": "coolrom.com.au",
-    "searchUrl": "https://coolrom.com.au/search?q={query}",
-    "searchRegex": "<a[^>]+href=\"(?:\\/roms\\/(?<systemSlug>[^\\/]+)\\/|https?:\\/\\/[^\\/]+\\/roms\\/(?<systemSlug>[^\\/]+)\\/)\"[^>]*>(?<system>[^<]+)<\\/a>\\s*(?:&raquo;|»|&raquo)\\s*<a[^>]+href=\"(?<url>(?:\\/roms\\/[^\\/]+\\/(?<id>\\d+)\\/[^\"]+\\.php|https?:\\/\\/[^\\/]+\\/roms\\/[^\\/]+\\/(?<id>\\d+)\\/[^\"]+\\.php))\"[^>]*>(?<title>[^<]+)<\\/a>",
-    "browseUrl": "https://coolrom.com.au/roms/{system}/{letter}/",
-    "browseRegex": "<a[^>]+href=\"(?<url>(?:\\/roms\\/[^\\/]+\\/(?<id>\\d+)\\/[^\"]+\\.php|https?:\\/\\/[^\\/]+\\/roms\\/[^\\/]+\\/(?<id>\\d+)\\/[^\"]+\\.php))\"[^>]*>(?<title>[^<]+)<\\/a>",
-    "downloadActionRegex": "<form\\s+([^>]*action=\"[^\"]*downloader\\.php\"[^>]*)>",
+    "domain": "coolrom.com",
+    "searchUrl": "https://coolrom.com/search?q={query}",
+    "searchRegex": "<a[^>]+href=\"(?<url>/roms/(?<system>[^/]+)/(?<id>\\d+)/[^\"]+\\.php)\"[^>]*>(?<title>[^<]+)</a>",
+    "browseUrl": "https://coolrom.com/roms/{system}/{letter}/",
+    "browseRegex": "<a[^>]+href=\"(?<url>/roms/(?<system>[^/]+)/(?<id>\\d+)/[^\"]+\\.php)\"[^>]*>(?<title>[^<]+)</a>",
+    "downloadActionRegex": "<a[^>]+href=\"(?<url>https://dl\\.coolrom\\.com/roms/[^\"]+)\"[^>]*>",
     "downloadMediaIdRegexes": [
-      "<input\\s+[^>]*name=\"id\"[^>]*value=\"(?<id>\\d+)\"",
-      "<input\\s+[^>]*value=\"(?<id>\\d+)\"[^>]*name=\"id\"",
-      "\\/roms\\/[^\\/]+\\/(?<id>\\d+)\\/"
+      "https://dl\\.coolrom\\.com/roms/[^/]+/[^/]+/(?<id>[^/\"]+)",
+      "/roms/[^/]+/(?<id>\\d+)/"
     ],
     "downloadMethod": "GET",
     "downloadParamName": "id",
     "systemMap": {
-      "NES": "nes",
-      "SNES": "snes",
-      "N64": "n64",
-      "Game Boy": "gb",
-      "Game Boy Color": "gbc",
-      "Game Boy Advance": "gba",
-      "Nintendo DS": "nds",
-      "Virtual Boy": "vb",
-      "Master System": "mastersystem",
       "Sega Genesis": "genesis",
+      "Genesis": "genesis",
+      "Master System": "mastersystem",
       "Game Gear": "gamegear",
-      "Sega Saturn": "saturn",
       "Sega CD": "segacd",
       "Sega 32X": "32x",
-      "PlayStation": "psx",
+      "Dreamcast": "dc",
+      "MAME": "mame",
+      "Neo Geo": "neogeo",
       "Atari 2600": "atari2600",
       "Atari 7800": "atari7800",
       "Atari Lynx": "atarilynx",
-      "Atari Jaguar": "atarijaguar",
-      "WonderSwan": "wonderswan",
-      "TurboGrafx-16": "tg16",
-      "ColecoVision": "colecovision",
-      "NeoGeo Pocket": "neogeopocket",
-      "MAME": "mame",
-      "Commodore 64": "c64"
+      "Commodore 64": "c64",
+      "PlayStation": "psx",
+      "PS1": "psx",
+      "PSP": "psp"
     }
   },
   {
