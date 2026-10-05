@@ -91,11 +91,7 @@
     "browseRegex": "<a[^>]+href=\"(?<url>/roms/(?<systemSlug>[^/]+)/[^\"/]+-(?<id>\\d+))\"[^>]*>(?<title>[^<]+)</a>\\s*</td>\\s*<td[^>]*>(?<system>[^<]+)</td>",
     "downloadActionRegex": "<form\\s+([^>]*id=\"dl\"[^>]*)>",
     "downloadMediaIdRegexes": [
-      "name=\"rom_url\"[^>]*value=\"(?<rom_url>[^\"]+)\"",
-      "name=\"console_url\"[^>]*value=\"(?<console_url>[^\"]+)\"",
-      "name=\"session\"[^>]*value=\"(?<session>[^\"]+)\"",
-      "window\\.location\\.href\\s*=\\s*[\"'](?<downloadUrl>https://downloads\\.retrostic\\.com/[^\"']+)[\"']",
-      "data-id=\"(?<id>\\d+)\""
+      "name=\"rom_url\"[^>]*value=\"(?<rom_url>[^\"]+)\""
     ],
     "downloadMethod": "GET_THEN_POST",
     "downloadParamName": "rom_url",
