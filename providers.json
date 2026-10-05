@@ -94,8 +94,8 @@
       "name=\"rom_url\"[^>]*value=\"(?<rom_url>[^\"]+)\"",
       "name=\"console_url\"[^>]*value=\"(?<console_url>[^\"]+)\"",
       "name=\"session\"[^>]*value=\"(?<session>[^\"]+)\"",
-      "data-id=\"(?<id>\\d+)\"",
-      "/roms/[^/]+/[^\"/]+-(?<id>\\d+)"
+      "window\\.location\\.href\\s*=\\s*[\"'](?<downloadUrl>https://downloads\\.retrostic\\.com/[^\"']+)[\"']",
+      "data-id=\"(?<id>\\d+)\""
     ],
     "downloadMethod": "GET_THEN_POST",
     "downloadParamName": "rom_url",
@@ -107,6 +107,7 @@
       "Game Boy Color": "gbc",
       "Game Boy Advance": "gba",
       "Nintendo DS": "nds",
+      "NINTENDO DS": "nds",
       "Virtual Boy": "virtual-boy",
       "Master System": "master-system",
       "Sega Genesis": "megadrive",
