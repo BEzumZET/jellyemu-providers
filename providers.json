@@ -116,57 +116,5 @@
       "GameCube": "gamecube",
       "Wii": "wii"
     }
-  },
-  {
-    "name": "Edge Emulation",
-    "domain": "edgeemu.net",
-    "searchUrl": "https://edgeemu.net/search.php?search={query}&system=all",
-    "searchRegex": "<details[^>]*data-name=\"[^\"]*\"[^>]*>\\s*<summary>(?<title>[^<]+)</summary>\\s*<p><a\\s+href=\"(?<url>/download/(?<system>[^/]+)/[^\"]+)\"[^>]*>download</a>",
-    "browseUrl": "https://edgeemu.net/browse/{system}/{letter}",
-    "browseRegex": "<details[^>]*data-name=\"[^\"]*\"[^>]*>\\s*<summary>(?<title>[^<]+)</summary>\\s*<p><a\\s+href=\"(?<url>/download/(?<system>[^/]+)/[^\"]+)\"[^>]*>download</a>",
-    "downloadActionRegex": "<a\\s+href=\"(?<url>/download/[^\"]+)\"[^>]*>download</a>",
-    "downloadMediaIdRegexes": [
-      "/download/[^/]+/(?<id>[^\"]+)"
-    ],
-    "downloadMethod": "GET",
-    "downloadParamName": "id",
-    "systemMap": {
-      "NES": "nintendo-nes",
-      "SNES": "nintendo-snes",
-      "N64": "nintendo-64",
-      "Game Boy": "nintendo-gameboy",
-      "Game Boy Color": "nintendo-gameboy-color",
-      "Game Boy Advance": "nintendo-gameboy-advance",
-      "Nintendo DS": "nintendo-ds",
-      "Virtual Boy": "nintendo-virtualboy",
-      "GameCube": "nintendo-gamecube",
-      "Famicom Disk System": "nintendo-fds",
-      "Master System": "sega-sms",
-      "Sega Genesis": "sega-genesis",
-      "Mega Drive": "sega-genesis",
-      "Game Gear": "sega-gamegear",
-      "Sega CD": "sega-cd",
-      "Sega 32X": "sega-32x",
-      "Sega Saturn": "sega-saturn",
-      "Dreamcast": "sega-dreamcast",
-      "SG-1000": "sega-sg1000",
-      "Atari 2600": "atari-2600",
-      "Atari 5200": "atari-5200",
-      "Atari 7800": "atari-7800",
-      "Atari Lynx": "atari-lynx",
-      "Atari Jaguar": "atari-jaguar",
-      "Atari ST": "atari-st",
-      "WonderSwan": "bandai-wonderswan",
-      "ColecoVision": "colecovision",
-      "Commodore 64": "commodore-64",
-      "Amiga": "commodore-amiga",
-      "TurboGrafx-16": "nec-pc-engine-turbografx-16",
-      "PC Engine": "nec-pc-engine-turbografx-16",
-      "Neo Geo Pocket Color": "snk-ngpc",
-      "Neo Geo CD": "snk-neo-geo-cd",
-      "3DO": "panasonic-3do",
-      "Vectrex": "gce-vectrex",
-      "MSX": "microsoft-msx"
-    }
   }
 ]
